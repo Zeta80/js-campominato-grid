@@ -1,6 +1,6 @@
 
 const startGameBtn = document.getElementById("play-button");
-const containerRow = document.getElementById("container-row")
+const containerRow = document.getElementById("container-row");
 
 
 //  Creare l'array con numeri casuali da 1 a 100

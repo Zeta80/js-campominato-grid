@@ -8,9 +8,11 @@ startGameBtn.addEventListener("click", function () {
     const squaresNumber = 100;
     const generatedNumbers = generateRandomOrderArray(squaresNumber);
 
+    document.querySelector(".row").innerHTML = "";
 
-    //  Per ogni numero creo un elemento square e lo insersco nella griglia
+    //  Per ogni numero creo un elemento square e lo insersco nella --griglia
     const row = document.querySelector(".row");
+
     for (let i = 0; i < generatedNumbers.length; i++) {
         const thisNumber = generatedNumbers[i];
         // Creo un elemnto square
@@ -33,7 +35,6 @@ startGameBtn.addEventListener("click", function () {
     function getRndInteger(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
-
     /**
      * Description: La funzione che genera tutti i numeri da 1 a arrayLength in ordine casuale senza numeri doppi
      * @param {number} arrayLength
